@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+@media screen and (max-width: 700px) {
+  div#picture {
+    display: none;
+  }
+  div#sign-up {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  h2, h3 {
+    text-align: center;
+  }
+  .grid-container, .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container {
+    margin: auto;
+  }
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Josefin Sans";
+  background-image: url("pusheenbg.png");
+  background-blend-mode:soft-light;
+  background-color: coral;
+  min-height: 100%;
+}
+
+#picture {
+  flex-basis: 40%;
+  flex-shrink: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+img {
+  margin: auto;
+}
+
+#sign-up {
+  flex-basis: 60%;
+  flex-shrink: 1;
+  background-color: rgba(210, 105, 30, 0.8);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 500px;
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 200px));
+}
+
+input {
+  font-family: inherit;
+  width: 200px;
+  padding: 0;
+  margin: 5px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 30px;
+}
+
+input:focus {
+  box-shadow: 0px 0px 25px 9px rgba(196, 186, 186, 0.303);
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+/* input[type="checkbox"] {
+  appearance: none;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+} */
+
+.subscribe label {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -1px;
+}
+
+button {
+  font-family: inherit;
+  background-color: brown;
+  color: white;
+  font-size: larger;
+  padding: 10px 40px;
+  font-weight: bold;
+  border-radius: 16px;
+  transition: 450ms;
+  border-width: 3px;
+}
+
+button:hover,
+button:focus {
+  transition: 150ms ease-in-out;
+  background-color: rgba(226, 209, 209, 0.2);
+  color: rgb(126, 23, 23);
+  border-color: brown;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(143, 34, 34);
+}
